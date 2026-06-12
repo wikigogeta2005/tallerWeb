@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Nota Conceptual 2026</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Registro de Nota Conceptual 2026</h1>
+</header>
+
+<main>
+
+<form id="formulario">
+
+    <section>
+
+        <h2>1. Datos Generales</h2>
+
+        <label>Nombre del Proyecto *</label>
+        <input type="text" id="nombreProyecto">
+
+        <label>Sede *</label>
+
+        <select id="sede">
+            <option value="">Seleccione una Sede</option>
+            <option>ESPE sede Latacunga</option>
+            <option>ESPE sede Santo Domingo</option>
+            <option>ESPE sede Matriz Sangolquí</option>
+            <option>ESMIL - Escuela Militar Eloy Alfaro</option>
+            <option>ESFORSE</option>
+            <option>IWIAS</option>
+            <option>ESMA</option>
+            <option>ESSUNA</option>
+            <option>ETFA</option>
+            <option>ESMENA</option>
+        </select>
+
+        <label>Departamento *</label>
+
+        <select id="departamento">
+            <option value="">Seleccione un Departamento</option>
+            <option>Ciencias de la Computación</option>
+            <option>Ciencias de la Vida</option>
+            <option>Ciencias de la Tierra</option>
+            <option>Ciencias Exactas</option>
+            <option>Ciencias de la Educación</option>
+            <option>Ciencias Económicas, Administrativas y de Comercio</option>
+        </select>
+
+        <label>Plazo de ejecución *</label>
+        <input type="text" id="plazo">
+
+        <label>Fecha inicio *</label>
+        <input type="date" id="fechaInicio">
+
+        <label>Fecha finalización *</label>
+        <input type="date" id="fechaFin">
+
+    </section>
+
+    <section>
+
+        <h2>2.1 Cobertura</h2>
+
+        <label><input type="checkbox" name="cobertura" value="Internacional"> Internacional</label>
+
+        <label><input type="checkbox" name="cobertura" value="Nacional"> Nacional</label>
+
+        <label><input type="checkbox" name="cobertura" value="Provincial"> Provincial</label>
+
+        <label><input type="checkbox" name="cobertura" value="Cantonal"> Cantonal</label>
+
+        <label><input type="checkbox" name="cobertura" value="Parroquial"> Parroquial</label>
+
+        <label><input type="checkbox" name="cobertura" value="Barrio o Comunidad"> Barrio o Comunidad</label>
+
+    </section>
+
+    <section>
+
+        <h2>2.2 Ubicación</h2>
+
+        <input type="text" id="provincia" placeholder="Provincia">
+
+        <input type="text" id="canton" placeholder="Cantón">
+
+        <input type="text" id="parroquia" placeholder="Parroquia">
+
+        <input type="text" id="barrio" placeholder="Barrio o Comunidad">
+
+    </section>
+
+    <section>
+
+        <h2>2.3 Sector de la Población Beneficiaria</h2>
+
+        <label><input type="checkbox" name="sector" value="Urbano Marginal"> Urbano Marginal</label>
+
+        <label><input type="checkbox" name="sector" value="Rural"> Rural</label>
+
+        <label><input type="checkbox" name="sector" value="Grupo de Atención Prioritaria"> Grupo de Atención Prioritaria</label>
+
+    </section>
+
+    <section>
+
+        <h2>2.4 Alineamiento</h2>
+
+        <label>Ámbito Prioritario *</label>
+
+        <select id="ambito">
+            <option value="">Seleccione</option>
+            <option>Desarrollo Territorial y Fortalecimiento Comunitario</option>
+            <option>Sostenibilidad Ambiental y Green University</option>
+            <option>Innovación Social y Resiliencia Territorial</option>
+        </select>
+
+        <label>ODS *</label>
+
+        <select id="ods">
+            <option value="">Seleccione un ODS</option>
+
+            <option value="1">ODS 1 - Fin de la pobreza</option>
+            <option value="2">ODS 2 - Hambre cero</option>
+            <option value="3">ODS 3 - Salud y bienestar</option>
+            <option value="4">ODS 4 - Educación de calidad</option>
+            <option value="5">ODS 5 - Igualdad de género</option>
+            <option value="6">ODS 6 - Agua limpia y saneamiento</option>
+            <option value="7">ODS 7 - Energía asequible y no contaminante</option>
+            <option value="8">ODS 8 - Trabajo decente y crecimiento económico</option>
+            <option value="9">ODS 9 - Industria, innovación e infraestructura</option>
+            <option value="10">ODS 10 - Reducción de desigualdades</option>
+            <option value="11">ODS 11 - Ciudades y comunidades sostenibles</option>
+            <option value="12">ODS 12 - Producción y consumo responsables</option>
+            <option value="13">ODS 13 - Acción por el clima</option>
+            <option value="14">ODS 14 - Vida submarina</option>
+            <option value="15">ODS 15 - Vida de ecosistemas terrestres</option>
+            <option value="16">ODS 16 - Paz, justicia e instituciones sólidas</option>
+            <option value="17">ODS 17 - Alianzas para lograr los objetivos</option>
+        </select>
+
+        <label>Meta ODS *</label>
+
+        <select id="metaOds">
+            <option value="">Seleccione una meta</option>
+            
+        </select>
+
+    </section>
+
+    <button type="submit">Guardar</button>
+
+</form>
+
+<section id="resumen"></section>
+
+</main>
+
+<script src="./app.js"></script>
+
+</body>
+</html>

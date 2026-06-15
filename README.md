@@ -65,3 +65,10 @@ Una vez ejecutado el contenedor, la aplicación estará disponible en:
 ```text
 http://localhost:8081
 ```
+
+Desde el navegador
+
+https://hub.docker.com/repository/docker/kenaposo2005/espe-tal/general
+Descargar imagen: docker pull kenaposo2005/espe-tal:latest  
+Ejecutar imagen publica: docker run -d -p 8081:80 kenaposo2005/espe-tal:latest
+
